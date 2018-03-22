@@ -26,6 +26,10 @@ snippet foro "for (const prop of object}) { ... }"
 	for (const ${1:prop} of ${2:object}) {
 		${0:$1}
 	}
+snippet forl "for (let i = 0; i < length; i++)"
+	for (let ${1:i} = 0; $1 < ${2:Arr.length}; $1++) {
+		${0:${VISUAL}}
+	}
 # Generator
 snippet fun*
 	function* ${1:function_name}(${2}) {
